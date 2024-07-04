@@ -1,0 +1,63 @@
+.searchbar {
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+    margin-top: 50px;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .searchbar-1,
+  .searchbar-2,
+  .searchbar-3,
+  .searchbar-4 {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  .search-button {
+    width: 250px;
+    background-color: blue;
+    font-size: 16px;
+    border-radius: 5px;
+    color: aliceblue;
+  }
+  
+  @media (max-width: 768px) {
+    .searchbar {
+      flex-wrap: wrap;
+      justify-content: center; /* Center items horizontally */
+      padding: 10px;
+    }
+  
+    .searchbar-1,
+    .searchbar-2,
+    .searchbar-3,
+    .searchbar-4 {
+      width: calc(50% - 10px); /* Adjust width for two items per row with gap */
+      margin-bottom: 10px; /* Add some space between rows */
+    }
+  
+    .search-button {
+      width: calc(100% - 20px); /* Full width for button with padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchbar-1,
+    .searchbar-2,
+    .searchbar-3,
+    .searchbar-4 {
+      width: 80%; /* Full width for each select element */
+      margin-bottom: 10px; /* Add some space between rows */
+    }
+  
+    .search-button {
+      width: 80%; /* Full width for button */
+    }
+  }
+  
